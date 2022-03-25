@@ -10,4 +10,11 @@ class Cilindro implements FormaTridimensional{
   double? calculaVolume() {
     throw UnimplementedError();
   }
+
+  @override
+  String toString() {
+    print('Cilindro.toString()');
+
+    return super.toString();
+  }
 }

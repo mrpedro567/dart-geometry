@@ -18,18 +18,21 @@ void main(){
    * EXEMPLO DE POLIMORFISMO 
    * NESSE CASO A LISTA TRABALHA APENAS COM FORMAS
    * ENTÃO, TANTO O CIRCULO QUANTO O CILINDRO SÃO FORMAS PARA A LISTA 
-   * MAS AO MESMO TEMPO SÃO UM CILINDRO E UM CIRCULO
    */
 
   lista.add(q1);
   lista.add(q2);
   lista.add(c1);
-  lista.add(q2);
-//  lista.add(cl1);
-  lista.mostraAreas();
+  lista.add(c2);
+  lista.add(cl1);
+
+  /**
+   * AO SER CHAMADO O MÉTODO toString ELE CHAMA O MÉTODO DAS SUBCLASSES E NÃO
+   * DE FORMAS. EX, SERÃO CHAMADOS OS METODOS DE QUADRADO EM Q1 E Q2, CIRCULO EM C1 E C2 E DE CILINDRO EM CL1
+   */
   print(q1.toString());
   print(q2.toString());
   print(c1.toString());
-  print(q2.toString());
+  print(c2.toString());
   print(cl1.toString());
 }

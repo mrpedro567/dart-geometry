@@ -22,6 +22,8 @@ class Circulo extends FormaBidimensional{
 
   @override
   String toString() {
+    print('Circulo.toString()');
+
     return super.toString();
-  }  
+  }
 }

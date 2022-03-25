@@ -22,6 +22,8 @@ class Quadrado extends FormaBidimensional{
 
   @override
   String toString() {
+    print('Quadrado.toString()');
+
     return super.toString();
   }
 }
